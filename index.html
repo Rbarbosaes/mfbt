@@ -1,36 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi Página Web</title>
-  <link rel="stylesheet" type="text/css" href="mi_estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio Personal</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+         /* styles.css */
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+header {
+  background-color: #3b649e;
+  padding: 20px;
+}
+
+header img {
+  width: 200px; /* Cambia el valor según el tamaño deseado */
+  height: auto; /* Esto asegura que la imagen mantenga su proporción */
+  border-radius: 50%;
+}
+
+
+h1 {
+  margin: 0;
+  color: #85bdd1;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+h3 {
+  color: #ccc;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #ccc;
+}
+
+footer {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos específicos para secciones */
+#experiencia ul,
+#habilidades ul,
+#proyectos ul,
+#contacto ul {
+  list-style-type: circle;
+  color: #ccc;
+}
+
+/* Estilos para enlaces */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos adicionales */
+#sobre-mi {
+  background-color: #444;
+  padding: 20px;
+}
+
+#experiencia {
+  background-color: #555;
+  padding: 20px;
+}
+
+#habilidades {
+  background-color: #666;
+  padding: 20px;
+}
+
+#proyectos {
+  background-color: #777;
+  padding: 20px;
+}
+
+#contacto {
+  background-color: #888;
+  padding: 20px;
+}
+   
+
+  </style>
 </head>
 <body>
   <header>
-    <h1>Bienvenido a mi página web</h1>
+    <img src="https://media.istockphoto.com/id/1069238294/es/foto/trabajo-en-equipo-de-compa%C3%B1eros-de-trabajo-abogado-consulta-y-conferencia-de-profesionales.jpg?s=612x612&w=0&k=20&c=sp4sXreHy1bbHv_kZhKgAl6qwwEfgvmuZ2OOxVNzn9M=" alt="Logo del portafolio">
+    <h1>Mi Portafolio Personal</h1>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Acerca de</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </nav>
-
   <main>
-    <section>
-      <h2>Acerca de mí</h2>
-      <p>Hola, soy Juan Barbosa. Bienvenido a mi página web.</p>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <h3>Maria Fernanda Barbosa Torres</h3>
+      <p>Soy una abogada apasionada y comprometida con el derecho notarial y la asesoría legal integral. Con experiencia en diversas áreas legales, mi objetivo es brindar soluciones efectivas y éticas a mis clientes.</p>
     </section>
 
-    <section>
+    <section id="experiencia">
+      <h2>Experiencia</h2>
+      <ul>
+        <li>Bufete de Abogados XYZ - Abogada Notarial (2018 - Presente)</li>
+        <li>Bufete de Abogados ABC - Asociada Legal (2015 - 2018)</li>
+      </ul>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Derecho Notarial</li>
+        <li>Derecho Civil</li>
+        <li>Derecho Contratual</li>
+        <li>Resolución de Conflictos</li>
+      </ul>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos Destacados</h2>
+      <ul>
+        <li>Redacción y revisión de contratos para empresa XYZ</li>
+        <li>Asesoramiento legal en caso de disputa de propiedades</li>
+        <li>Elaboración de escrituras de compraventa de inmuebles</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
       <h2>Contacto</h2>
-      <p>Puedes contactarme a través de mi correo electrónico: <div barbosa893@hotmail.com=""></div></p>
+      <p>Puedes comunicarte conmigo a través de:</p>
+      <ul>
+        <li>Correo electrónico: maria.barbosa@ejemplo.com</li>
+        <li>Teléfono: (123) 456-7890</li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <p>Derechos de autor &copy; 2023 - Mi Página Web</p>
+    <p>&copy; 2023 María Fernanda Barbosa Torres - Todos los derechos reservados</p>
   </footer>
 </body>
 </html>
+
