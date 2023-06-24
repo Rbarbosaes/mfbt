@@ -3,131 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio Personal</title>
+  <title>Mi Portafolio</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-         /* styles.css */
+    /* styles.css */
 
-/* Estilos generales */
+.nombre {
+  text-align: center;
+}
+    
+    /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
   margin: 0;
   padding: 0;
-  background-color: #333;
-  color: #fff;
 }
 
+h1, h2 {
+  color: #333;
+}
+
+h3
+{
+color:#ccc
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Estilos de la cabecera */
 header {
-  background-color: #3b649e;
+  background-color: #333;
   padding: 20px;
 }
-
-header img {
-  width: 200px; /* Cambia el valor según el tamaño deseado */
-  height: auto; /* Esto asegura que la imagen mantenga su proporción */
+.Foto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px; /* Cambia el valor según el tamaño deseado */
+  height: 280px; /* Esto asegura que la imagen mantenga su proporción */
   border-radius: 50%;
 }
 
 
-h1 {
-  margin: 0;
-  color: #85bdd1;
+nav ul {
+  display: flex;
+  justify-content: center;
 }
 
-main {
-  padding: 20px;
+nav ul li {
+  margin-right: 20px;
 }
 
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Estilos de las secciones */
 section {
-  margin-bottom: 40px;
+  padding: 50px;
 }
 
-h2 {
-  color: #ffffff;
+section h2 {
+  margin-bottom: 20px;
 }
 
-h3 {
-  color: #ccc;
+section p {
+  margin-bottom: 15px;
 }
 
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  color: #ccc;
+/* Estilos del formulario de contacto */
+#contacto input,
+#contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
+#contacto button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos del pie de página */
 footer {
-  background-color: #222;
+  background-color: #333;
   padding: 20px;
   text-align: center;
 }
 
-/* Estilos específicos para secciones */
-#experiencia ul,
-#habilidades ul,
-#proyectos ul,
-#contacto ul {
-  list-style-type: circle;
-  color: #ccc;
+footer p {
+  color: #fff;
+  margin: 0;
 }
 
-/* Estilos para enlaces */
-a {
-  color: #007bff;
-  text-decoration: none;
+/* Estilos de las redes sociales */
+.redes-sociales a {
+  display: inline-block;
+  margin-right: 10px;
 }
 
-a:hover {
-  text-decoration: underline;
+.redes-sociales img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
-
-/* Estilos adicionales */
-#sobre-mi {
-  background-color: #444;
-  padding: 20px;
-}
-
-#experiencia {
-  background-color: #555;
-  padding: 20px;
-}
-
-#habilidades {
-  background-color: #666;
-  padding: 20px;
-}
-
-#proyectos {
-  background-color: #777;
-  padding: 20px;
-}
-
-#contacto {
-  background-color: #888;
-  padding: 20px;
-}
-   
-
-  </style>
+</style>
 </head>
 <body>
   <header>
-    <img src="https://media.istockphoto.com/id/1069238294/es/foto/trabajo-en-equipo-de-compa%C3%B1eros-de-trabajo-abogado-consulta-y-conferencia-de-profesionales.jpg?s=612x612&w=0&k=20&c=sp4sXreHy1bbHv_kZhKgAl6qwwEfgvmuZ2OOxVNzn9M=" alt="Logo del portafolio">
-    <h1>Mi Portafolio Personal</h1>
+    <nav>
+      <nav class="menu">
+      <h3 class="nombre">Maria Fernanda Barbosa Torres</h3>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="logo"><img src="https://media.istockphoto.com/id/1069238294/es/foto/trabajo-en-equipo-de-compa%C3%B1eros-de-trabajo-abogado-consulta-y-conferencia-de-profesionales.jpg?s=612x612&w=0&k=20&c=sp4sXreHy1bbHv_kZhKgAl6qwwEfgvmuZ2OOxVNzn9M=" alt="Foto del portafolio" class="Foto">
+    </nav>
   </header>
 
+  
   <main>
+    <section id="inicio">
+      <h1>Mi Portafolio</h1>
+      <h2>Abogada</h2>
+      <p>Hola, soy Maria Fernanda Barbosa Torres, una abogada especializada en derecho notarial y ofrezco servicios de asesoría legal en diversos ámbitos. Estoy comprometida en brindar soluciones legales efectivas a mis clientes.</p>
+    </section>
+
     <section id="sobre-mi">
       <h2>Sobre mí</h2>
-      <h3>Maria Fernanda Barbosa Torres</h3>
-      <p>Soy una abogada apasionada y comprometida con el derecho notarial y la asesoría legal integral. Con experiencia en diversas áreas legales, mi objetivo es brindar soluciones efectivas y éticas a mis clientes.</p>
+      <p>Soy una abogada apasionada por mi trabajo y siempre me esfuerzo por proporcionar el mejor servicio a mis clientes. Mi objetivo es brindar asesoramiento legal integral y soluciones personalizadas que se adapten a las necesidades de cada cliente.</p>
+      <p>Con mi amplia experiencia en derecho notarial y mis habilidades en la redacción de documentos legales, puedo garantizar un servicio confiable y de calidad.</p>
     </section>
 
     <section id="experiencia">
       <h2>Experiencia</h2>
       <ul>
-        <li>Bufete de Abogados XYZ - Abogada Notarial (2018 - Presente)</li>
-        <li>Bufete de Abogados ABC - Asociada Legal (2015 - 2018)</li>
+        <li>Bufete Legal XYZ - Abogada (2015 - Presente)</li>
+        <li>ABC Law Firm - Asociada Legal (2010 - 2015)</li>
+        <li>Empresa XYZ - Pasantía en el Departamento Legal (2009 - 2010)</li>
       </ul>
     </section>
 
@@ -135,34 +172,18 @@ a:hover {
       <h2>Habilidades</h2>
       <ul>
         <li>Derecho Notarial</li>
-        <li>Derecho Civil</li>
-        <li>Derecho Contratual</li>
-        <li>Resolución de Conflictos</li>
-      </ul>
-    </section>
-
-    <section id="proyectos">
-      <h2>Proyectos Destacados</h2>
-      <ul>
-        <li>Redacción y revisión de contratos para empresa XYZ</li>
-        <li>Asesoramiento legal en caso de disputa de propiedades</li>
-        <li>Elaboración de escrituras de compraventa de inmuebles</li>
+        <li>Redacción Legal</li>
+        <li>Asesoría Jurídica</li>
+        <li>Negociación</li>
       </ul>
     </section>
 
     <section id="contacto">
       <h2>Contacto</h2>
-      <p>Puedes comunicarte conmigo a través de:</p>
-      <ul>
-        <li>Correo electrónico: maria.barbosa@ejemplo.com</li>
-        <li>Teléfono: (123) 456-7890</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 María Fernanda Barbosa Torres - Todos los derechos reservados</p>
-  </footer>
-</body>
-</html>
-
+      <p>Si tienes alguna pregunta o deseas recibir asesoría legal, no dudes en contactarme.</p>
+      <p>Email: mariafernanda@example.com</p>
+      <p>Teléfono: +1 123 456 7890</p>
+      
+      <div class="redes-sociales">
+        <a href="https://www.facebook.com/tu_perfil_de_facebook" target="_blank" rel="noopener noreferrer"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.twitter.com/tu_perfil_de_twitter" target="_blank" rel="noopener noreferrer"><img
